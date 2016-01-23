@@ -8,6 +8,21 @@
 
 		<title></title>
 
+
+    <script language="javascript">
+    document.onmousedown=disableclick;
+    status="Right Click Disabled";
+    function disableclick(event)
+    {
+      if(event.button==2)
+       {
+         alert(status);
+         return false;    
+       }
+    }
+    </script>
+
+
 		
 
 		<script> 
@@ -42,7 +57,7 @@
 
 	
 
-	<body style="background-color: black; background-image: url('http://www.animateit.net/data/media/june2010/animated_60.gif'); background-repeat: repeat;">
+	<body oncontextmenu="return false" style="background-color: black; background-image: url('http://www.animateit.net/data/media/june2010/animated_60.gif'); background-repeat: repeat;">
 
 		<div style="position: absolute; left: 50%; margin-left: -350px;">
 
